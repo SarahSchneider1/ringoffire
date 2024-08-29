@@ -1,11 +1,8 @@
-import { Component } from '@angular/core';
 import { Routes } from '@angular/router';
-import { StartScreenComponent } from './start-screen/start-screen.component';
+import { StartscreenComponent } from './startscreen/startscreen.component';
 import { GameComponent } from './game/game.component';
 
 export const routes: Routes = [
-    { path: '', component: StartScreenComponent },
-    { path: 'game', component: GameComponent},
-    { path: 'game', component: Game}
-
+    {path: '', component: StartscreenComponent},
+   { path:'game', component: GameComponent},
 ];

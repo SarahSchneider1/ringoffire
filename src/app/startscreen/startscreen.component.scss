@@ -1,0 +1,48 @@
+@import '../../styles.scss';
+
+.start-screen {
+    background-color: #404040;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    position: relative;
+    @include displayDirections(center,center);
+    >div {
+    @include displayDirections(center,center);
+        flex-direction: column;
+        height: 95vh;
+        border: solid 12px goldenrod;
+        width: 65%;
+        background-color: rgb(252, 0, 0);
+        margin: 30px;
+        >h1 {
+            font-size: 80px;
+            font-weight: bold;
+            color: white;
+            word-wrap: break-word;
+            inline-size: 300px;
+            text-align: center;        }
+           
+    }
+    .start-label-box{
+        position: relative;
+        >img {
+            width: 600px;
+            height: 350px;
+        &:hover {
+            filter: brightness(1.5);
+            cursor: pointer;
+        }
+        }
+    }
+
+    .start-game-text {
+        position: absolute;
+        bottom: 44%;
+        left: 34%;
+        font-size: 42px;
+        pointer-events: none;
+    
+    }
+
+}
